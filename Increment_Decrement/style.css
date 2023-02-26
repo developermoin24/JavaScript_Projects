@@ -14,7 +14,7 @@ body{
 .img-conatiner{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     border-right: 1px solid #80808026;
 }
@@ -35,7 +35,7 @@ body{
     border: 1px solid #609966;
 }
 .details-container{
-    padding: 100px;
+    padding: 70px;
 }
 .breadcrumb p{
     margin-bottom: 12px;
@@ -94,7 +94,7 @@ input[type="radio"]{
     align-items: center;
     background-color: #27662d;
     color: #fff;
-    width: 150px;
+    width: 170px;
     padding: 5px 20px 5px 20px;
     border-radius: 5px;
     gap: 10px;
@@ -135,7 +135,7 @@ input[type="radio"]{
     font-weight: 500;
     color: #615f5f;
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:992px){
     .wrapper{
         display: grid;
         grid-template-columns: 1fr;
