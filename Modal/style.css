@@ -20,10 +20,10 @@
     width: 13em;
     height: 13em;
     border-radius: 50%;
-    box-shadow: 0 0 50px #d84869;
-    background: linear-gradient(-25deg, #d84869, #f46641);
+    box-shadow: 0 0 50px #edf1d6;
+    background: linear-gradient(-25deg, #598145, #9dc08b);
     animation: circle1Animate 15s infinite;
-  }
+}
   
   @keyframes circle1Animate {
     50% {
@@ -40,10 +40,10 @@
     width: 19em;
     height: 19em;
     border-radius: 50%;
-    box-shadow: 0 0 50px #5648d8;
-    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    box-shadow: 0 0 50px #f6e6c2;
+    background: linear-gradient(-25deg, #ffaacf, #ea8fea);
     animation: circle2Animate 8s infinite;
-  }
+}
   @keyframes circle2Animate {
     50% {
       bottom: 6%;
