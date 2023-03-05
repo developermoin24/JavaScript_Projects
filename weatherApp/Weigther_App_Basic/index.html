@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f04758656.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+   <section class="wrapper">
+    <h1>WEATHER APP</h1>
+    <div class="tabs">
+        <button class="activeBtn yourLoc">Your Location</button>
+        <button>Search Location</button>
+    </div>
+    <div class="display-wrapper">
+        <div class="loader">
+            <img src="https://media.tenor.com/DPEfCqnChk0AAAAi/loading-slow-net.gif" alt="">
+        </div>
+        <div class="current-display">
+            <div class="main-data-one">
+                <p data-cityName>Afzalgarh</p>
+            <div class="weather-condtion">
+                <p data-weatherDecription>Clear</p>
+                <img src="" alt="" data-weatherDecImg>
+            </div>
+            <h1 data-temp>28.21 C</h1>
+            </div>
+            <div class="main-data-two">
+                <div class="data-container">
+                    <img src="" alt="">
+                    <p>Windspeed</p>
+                    <p data-speed>0.86m/s</p>
+                </div>
+                <div class="data-container" >
+                    <img src="" alt="">
+                    <p>Humidity</p>
+                    <p data-humedity>66%</p>
+                </div>
+                <div class="data-container" >
+                    <img src="" alt="">
+                    <p>Clouds</p>
+                    <p data-cloudy>0%</p>
+                </div>
+            </div>
+        </div>
+        <div class="search-display">
+            <div class="search-box">
+                <input type="text" placeholder="Search by city name">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="loader" style="display: block;"></div>
+            <div class="withsearch">
+                <div class="main-data-one">
+                    <p data-cityNameS>Afzalgarh1</p>
+                <div class="weather-condtion">
+                    <p data-weatherDecriptionS>Clear</p>
+                    <img src="" alt="" data-weatherDecImgS>
+                </div>
+                <h1 data-tempS>28.21 C</h1>
+                </div>
+                <div class="main-data-two">
+                    <div class="data-container">
+                        <img src="" alt="">
+                        <p>Windspeed</p>
+                        <p data-speedS>0.86m/s</p>
+                    </div>
+                    <div class="data-container" >
+                        <img src="" alt="">
+                        <p>Humidity</p>
+                        <p data-humedityS>66%</p>
+                    </div>
+                    <div class="data-container" >
+                        <img src="" alt="">
+                        <p>Clouds</p>
+                        <p data-cloudyS>0%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="error"></div>
+        </div>
+    </div>
+   </section>
+    <script src="main.js"></script>
+</body>
+</html>
