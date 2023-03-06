@@ -1,0 +1,218 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body{
+    background-color: #f7f8ff;
+}
+body.dark{
+    background-color: #131b2f;
+}
+.wrapper{
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.dev-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #586a95;
+}
+.dev-wrapper.dark{
+    color: #fff;
+}
+.mode-change img{
+    width: 20px;
+    filter: contrast(0.5);
+}
+.dark p, .light p{
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+.mode-change div{
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.light-mode{
+    display: none;
+}
+.light-mode.active{
+    display: flex;
+}
+.dark-mode{
+  display: none;
+}
+.dark-mode.dark img{
+    filter: invert(1);
+}
+.dark-mode.active{
+  display: flex;
+}
+.form-wrapper{
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-block: 20px;
+    border-radius: 8px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.form-wrapper.dark{
+    background-color: #1f2947;
+}
+.form-wrapper img{
+    width: 20px;
+    margin-right: 8px;
+}
+.form-container input{
+    all: unset;
+    width: calc(100% - 100px);
+    height: 65px;
+    color: #586a95;
+}
+.form-container input.dark{
+    color:#fff;
+}
+.form-container input::placeholder{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.form-container input.dark::placeholder{
+    color: #fff;
+}
+.form-container button {
+    all: unset;
+    background-color: #027aff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.profile-wrapper{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 8px;
+    display: none;
+    justify-content: space-between;
+    gap: 40px;
+    padding:15px 15px 0 15px;
+}
+.profile-wrapper.dark{
+    background-color: #1f2947;
+}
+.profile-wrapper.active{
+    display: flex;
+}
+.profile-img img{
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.name-join {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.name-join p:first-of-type{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.name-join p:last-of-type{
+    color: #586a95;
+    font-weight: 400;
+}
+.name-join p.dark:first-of-type{
+    color: #fff;
+}
+.name-join p.dark:last-of-type{
+    color: #fff;
+}
+.title a{
+    color: #027aff;
+    font-size: 1.15rem;
+}
+.description p{
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    color: #586a95;
+    font-weight: 400;
+    margin-block: 15px;
+}
+.description p.dark{
+    color: #fff;
+}
+.following-wrapper{
+    background-color: #f7f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.following-wrapper.dark{
+    background-color: #131b2f;
+    color: #fff;
+}
+.details p:first-of-type{
+    color: #586a95;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+.details p.dark:first-of-type{
+    color: #fff;
+}
+.details p:last-of-type{
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.links.dark{
+    color: #fff;
+}
+.parameter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+.links img{
+    width: 20px;
+    filter: contrast(0.5);
+}
+.links.dark img{
+    width: 20px;
+    filter: invert(1);
+}
+.error-conatinter{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.error-conatinter img{
+    width: 300px;
+    height: auto;
+}
+.error-conatinter.active{
+    display: flex;
+}
